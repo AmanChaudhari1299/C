@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main ()
+{
+    int num,hold,lvar,sum;
+    printf("Enter the value of num:");
+    scanf("%d",&num);
+    printf("The given value is = %d",num);
+    int original=num;
+    hold=0;
+    while(num!=0)
+    {
+       lvar=num%10;
+       hold=hold*10+lvar;
+       num=num/10;
+    }
+    printf("\nThe reverse form is = %d",hold);
+    sum=original+hold;
+    printf("\nThe sum of given value and the reverse form is = %d",sum);
+    return 0;
+}
